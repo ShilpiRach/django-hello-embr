@@ -1,5 +1,5 @@
 platform: python
-platformVersion: "3.12"
+platformVersion: "3.13"
 
 healthCheck:
   path: /health
