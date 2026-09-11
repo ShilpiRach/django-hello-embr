@@ -1,0 +1,10 @@
+components:
+  - name: web
+    role: web
+    platform: python
+    platformVersion: "3.13"
+    path: /
+    run:
+      port: 8080
+      start: gunicorn --bind 0.0.0.0:8080 hello.wsgi:application
+      healthCheckPath: /health
