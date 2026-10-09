@@ -1,7 +1,10 @@
 from django.http import HttpResponse, JsonResponse
 from django.urls import path
 
+print("runtime-log event=django-urlconf-loaded", flush=True)
+
 def index(request):
+    print("runtime-log event=index-request", flush=True)
     return HttpResponse("Hello from Django on Embr! 🚀")
 
 def health(request):
