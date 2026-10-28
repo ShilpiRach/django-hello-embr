@@ -1,0 +1,7 @@
+components:
+- name: app
+  role: web
+  platform: python
+  run:
+    port: 8080
+  path: /
